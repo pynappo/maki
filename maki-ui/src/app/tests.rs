@@ -965,6 +965,7 @@ const SUB_TOKENS: TokenUsage = TokenUsage {
     output: 200,
     cache_creation: 300,
     cache_read: 400,
+    cost: None,
 };
 const SUB_COST: Option<f64> = Some(0.007);
 const MAIN_TOKENS: TokenUsage = TokenUsage {
@@ -972,6 +973,7 @@ const MAIN_TOKENS: TokenUsage = TokenUsage {
     output: 100,
     cache_creation: 0,
     cache_read: 0,
+    cost: None,
 };
 const MAIN_COST: Option<f64> = Some(0.002);
 const MAIN_MODEL: &str = "main-model";
@@ -1023,6 +1025,7 @@ const RESTORED_TOKENS: TokenUsage = TokenUsage {
     output: 0,
     cache_creation: 0,
     cache_read: 0,
+    cost: None,
 };
 const RESTORED_MODEL: &str = "model-that-ran-before";
 const SIGMA_MISSING: &str = "the status bar must draw the session total";
